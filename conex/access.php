@@ -4,7 +4,6 @@
     if(!isset($_SESSION['id'])){
         header("Location: index.php");
     }
-    
     $usuario = $_SESSION['usuario'];
     $nombre = $_SESSION['nombre'];
     $tipo_usuario = $_SESSION['tipo_usuario'];
@@ -64,34 +63,21 @@
 
             <ul class="menu_items submenu">
               <a href="../exportar/index.php" class="nav_link sublink">Importar datos clientes</a>
-              <a href="code/mie/showMembers.php" class="nav_link sublink">Consultar Clientes</a>
+              <a href="client/addClient.php" class="nav_link sublink">Agregar Clientes</a>
+              <a href="client/showClients.php" class="nav_link sublink">Ver Clientes</a>
             </ul>
           </li>
           <li class="item">
             <div href="#" class="nav_link submenu_item">
               <span class="navlink_icon">
-                <i class="fa-solid fa-person"></i>
-              </span>
-              <span class="navlink">Lideres</span>
+              <i class="fa-solid fa-magnifying-glass"></i> </span>
+              <span class="navlink">CONSULTAR CLIENTE</span>
               <i class="bx bx-chevron-right arrow-left"></i>
             </div>
             <ul class="menu_items submenu">
-              <a href="code/leaders/createLeaders.php" class="nav_link sublink">Crear Lider</a>
-              <a href="code/leaders/showLeaders.php" class="nav_link sublink">Consultar lideres</a>
+              <a href="../index.php" class="nav_link sublink">Consultar clientes</a>
             </ul>
           </li>
-          <li class="item">
-            <div href="#" class="nav_link submenu_item">
-              <span class="navlink_icon">
-                <i class="fa-sharp fa-solid fa-cake-candles"></i> </span>
-              <span class="navlink">Cumpleaños</span>
-              <i class="bx bx-chevron-right arrow-left"></i>
-            </div>
-            <ul class="menu_items submenu">
-              <a href="code/birthday/showBirthday.php" class="nav_link sublink">Ver Cumpleaños</a>
-            </ul>
-          </li>
-
           <hr style="border: 1px solid #F3840D; border-radius: 5px;">
           <li class="item">
             <div href="#" class="nav_link submenu_item">
@@ -141,7 +127,9 @@
 
             <ul class="menu_items submenu">
               <a href="../exportar/index.php" class="nav_link sublink">Importar datos clientes</a>
-              <a href="code/mie/showMembers.php" class="nav_link sublink">Ver Clientes</a>
+              <a href="client/addClient.php" class="nav_link sublink">Agregar Clientes</a>
+              <a href="client/showClients.php" class="nav_link sublink">Ver Clientes</a>
+            
             </ul>
           </li>
           <li class="item">
@@ -152,7 +140,7 @@
               <i class="bx bx-chevron-right arrow-left"></i>
             </div>
             <ul class="menu_items submenu">
-              <a href="code/birthday/showBirthday.php" class="nav_link sublink">Consultar clientes</a>
+              <a href="../index.php" class="nav_link sublink">Consultar clientes</a>
             </ul>
           </li>
           <hr style="border: 1px solid #F3840D; border-radius: 5px;">

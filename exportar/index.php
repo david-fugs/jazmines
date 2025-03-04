@@ -61,15 +61,18 @@ if (isset($_POST["importar"])) {
     });
     // Mostrar todas las cuentas duplicadas al final
     if (!empty($cuentasDuplicadas)) {
-        echo "Las siguientes cuentas ya existen en la base de datos:";
-        echo "<ul>";
+        $mensaje = "Las siguientes cuentas ya existen en la base de datos:\n";
         foreach ($cuentasDuplicadas as $cuenta) {
-            echo "<li>La cuenta <b> $cuenta</b> ya se encuentra registrada.</li>";
+            $mensaje .= "- La cuenta $cuenta ya se encuentra registrada.\n";
         }
-        echo "</ul>";
     } else {
-        echo "<h3>Todos los registros fueron insertados correctamente.</h3>";
+        $mensaje = "Todos los registros fueron insertados correctamente.";
     }
+
+    echo "<script>
+        alert(`$mensaje`);
+        window.location.href = '../conex/client/showClients.php';
+    </script>";
 }
 if (isset($_POST["exportar"])) {
     $fila = 2;
@@ -154,52 +157,67 @@ if (isset($_POST["exportar"])) {
 </head>
 
 <body>
-    <div id="container">
-    </div>
-    <div id="wb_header">
-        <div id="header">
-            <div class="row">
-                <div class="col-1">
-                    <div id="wb_Text1">
-                        <center>
-                            <p style="border-radius: 20px;box-shadow: 10px 10px 5px #b1940b; font-size: 23px; font-weight: bold;"><img src='../img/logo.png' width="400" height="205" style="display: inline-block;"><BR />IMPORTAR Y EXPORTAR DATOS INFORMACION CLIENTES<br><br></p>
-                        </center>
+    <!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Importar y Exportar Datos</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body {
+                background-color: #f8f9fa;
+            }
+
+            .header-container {
+                text-align: center;
+                padding: 20px;
+                background: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+                margin-bottom: 20px;
+            }
+
+            .note {
+                font-size: 18px;
+                color: #555;
+            }
+
+            .custom-file-label::after {
+                content: "Seleccionar";
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container mt-5">
+            <div class="header-container">
+                <img src="../img/logo.png" width="400" height="205" alt="Logo">
+                <h2 class="mt-3">IMPORTAR Y EXPORTAR DATOS INFORMACIÓN CLIENTES</h2>
+                <p class="note"><strong>NOTA:</strong> Si desea subir información a través del archivo de Excel, debe cumplir con las características solicitadas.
+                    <a href='formato_V1.xlsx' class="text-primary fw-bold">Descargue desde aquí el formato...</a>
+                </p>
+            </div>
+
+            <div class="card p-4">
+                <form name="frm" method="POST" action="" enctype="multipart/form-data" accept-charset="UTF-8">
+                    <div class="mb-3">
+                        <label for="archivo" class="form-label">Seleccionar archivo</label>
+                        <input class="form-control" type="file" name="archivo" id="archivo">
                     </div>
-                    <span style="color:#80938f;font-family:'Source Sans Pro';font-size:20px;"><B>NOTA: </B>Si desea subir información a través del archivo de Excel, debe cumplir con las características solicitadas. <b><i><A href='formato_V1.xlsx'>Descargue desde aquí el formato...</i></b></A>
-                        <br><br>
-                    </span>
-                    <span style="color:#000000;font-family:'Source Sans Pro';font-size:27px;">
-                        <br>
-                    </span>
-                </div>
+                    <button type="submit" id="btn_cargar" name="importar" class="btn btn-primary">Cargar</button>
+                </form>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href='../conex/access.php'>
+                    <img src='../img/atras.png' width="80" height="80" title="Regresar">
+                </a>
             </div>
         </div>
-    </div>
 
-    <div id="wb_LayoutGrid1">
-        <form name="frm" method="POST" action="" enctype="multipart/form-data" accept-charset="UTF-8" id="LayoutGrid1">
-            <div class="row">
-                <div class="col-1">
-                    <div id="file_archivo" class="input-group" style="display:table;width:100%;height:16px;z-index:2;">
-                        <input class="form-control" type="text" readonly="">
-                        <label class="input-group-btn">
-                            <input type="file" name="archivo" style="display:none;">
-                            <span class="btn">Seleccionar archivo...</span>
-                        </label>
-                    </div>
-                    <input type="submit" id="btn_cargar" name="importar" value="Cargar" style="display:inline-block;width:96px;height:25px;z-index:3;">
-                    <div id="wb_LayoutGrid2">
-                        <div id="LayoutGrid2">
-                            <div class="row">
-                            <center>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
-    <p><a href='../conex/access.php'><img src='../img/atras.png' width="80" height="80" title="Regresar"></a></p>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
 
-</body>
-
-</html>
+    </html>
