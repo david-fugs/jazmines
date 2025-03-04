@@ -1,0 +1,61 @@
+[23-Feb-2024 09:21:45 America/Bogota] PHP Fatal error:  Uncaught Error: Call to undefined function money_format() in /home4/aprendad/public_html/exequialeslosjazmines.com/soft/index1.php:71
+Stack trace:
+#0 {main}
+  thrown in /home4/aprendad/public_html/exequialeslosjazmines.com/soft/index1.php on line 71
+[26-Feb-2024 08:08:41 America/Bogota] PHP Fatal error:  Uncaught Error: Call to undefined function money_format() in /home4/aprendad/public_html/exequialeslosjazmines.com/soft/index1.php:71
+Stack trace:
+#0 {main}
+  thrown in /home4/aprendad/public_html/exequialeslosjazmines.com/soft/index1.php on line 71
+[26-Feb-2024 08:08:48 America/Bogota] PHP Warning:  Undefined array key "num_doc_cta" in /home4/aprendad/public_html/exequialeslosjazmines.com/soft/index1.php on line 36
+[26-Feb-2024 08:08:48 America/Bogota] PHP Fatal error:  Uncaught Error: Call to undefined function money_format() in /home4/aprendad/public_html/exequialeslosjazmines.com/soft/index1.php:71
+Stack trace:
+#0 {main}
+  thrown in /home4/aprendad/public_html/exequialeslosjazmines.com/soft/index1.php on line 71
+[26-Feb-2024 08:09:42 America/Bogota] PHP Fatal error:  Uncaught Error: Call to undefined function money_format() in /home4/aprendad/public_html/exequialeslosjazmines.com/soft/index1.php:71
+Stack trace:
+#0 {main}
+  thrown in /home4/aprendad/public_html/exequialeslosjazmines.com/soft/index1.php on line 71
+[26-Feb-2024 08:26:06 America/Bogota] PHP Fatal error:  Uncaught Error: Call to undefined function money_format() in /home4/aprendad/public_html/exequialeslosjazmines.com/soft/index1.php:71
+Stack trace:
+#0 {main}
+  thrown in /home4/aprendad/public_html/exequialeslosjazmines.com/soft/index1.php on line 71
+[26-Feb-2024 18:47:53 America/Bogota] PHP Fatal error:  Uncaught Error: Call to undefined function money_format() in /home4/aprendad/public_html/exequialeslosjazmines.com/soft/index1.php:71
+Stack trace:
+#0 {main}
+  thrown in /home4/aprendad/public_html/exequialeslosjazmines.com/soft/index1.php on line 71
+[29-Feb-2024 12:50:53 America/Bogota] PHP Fatal error:  Uncaught Error: Call to undefined function money_format() in /home4/aprendad/public_html/exequialeslosjazmines.com/soft/index1.php:71
+Stack trace:
+#0 {main}
+  thrown in /home4/aprendad/public_html/exequialeslosjazmines.com/soft/index1.php on line 71
+[29-Feb-2024 15:20:34 America/Bogota] PHP Fatal error:  Uncaught Error: Call to undefined function money_format() in /home4/aprendad/public_html/exequialeslosjazmines.com/soft/index1.php:71
+Stack trace:
+#0 {main}
+  thrown in /home4/aprendad/public_html/exequialeslosjazmines.com/soft/index1.php on line 71
+[29-Feb-2024 17:56:52 America/Bogota] PHP Fatal error:  Uncaught Error: Call to undefined function money_format() in /home4/aprendad/public_html/exequialeslosjazmines.com/soft/index1.php:71
+Stack trace:
+#0 {main}
+  thrown in /home4/aprendad/public_html/exequialeslosjazmines.com/soft/index1.php on line 71
+[29-Feb-2024 17:58:43 America/Bogota] PHP Fatal error:  Uncaught Error: Call to undefined function money_format() in /home4/aprendad/public_html/exequialeslosjazmines.com/soft/index1.php:71
+Stack trace:
+#0 {main}
+  thrown in /home4/aprendad/public_html/exequialeslosjazmines.com/soft/index1.php on line 71
+[01-Mar-2024 12:23:25 America/Bogota] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'aprendad_jazsoft'@'localhost' (using password: YES) in /home4/aprendad/public_html/exequialeslosjazmines.com/soft/conexion.php:3
+Stack trace:
+#0 /home4/aprendad/public_html/exequialeslosjazmines.com/soft/conexion.php(3): mysqli->__construct('localhost', 'aprendad_jazsof...', Object(SensitiveParameterValue), 'aprendad_exejaz...')
+#1 /home4/aprendad/public_html/exequialeslosjazmines.com/soft/index.php(30): include('/home4/aprendad...')
+#2 {main}
+  thrown in /home4/aprendad/public_html/exequialeslosjazmines.com/soft/conexion.php on line 3
+[01-Mar-2024 12:23:31 America/Bogota] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'aprendad_jazsoft'@'localhost' (using password: YES) in /home4/aprendad/public_html/exequialeslosjazmines.com/soft/conexion.php:3
+Stack trace:
+#0 /home4/aprendad/public_html/exequialeslosjazmines.com/soft/conexion.php(3): mysqli->__construct('localhost', 'aprendad_jazsof...', Object(SensitiveParameterValue), 'aprendad_exejaz...')
+#1 /home4/aprendad/public_html/exequialeslosjazmines.com/soft/index.php(30): include('/home4/aprendad...')
+#2 {main}
+  thrown in /home4/aprendad/public_html/exequialeslosjazmines.com/soft/conexion.php on line 3
+[01-Mar-2024 12:25:24 America/Bogota] PHP Fatal error:  Uncaught Error: Call to undefined function money_format() in /home4/aprendad/public_html/exequialeslosjazmines.com/soft/index1.php:71
+Stack trace:
+#0 {main}
+  thrown in /home4/aprendad/public_html/exequialeslosjazmines.com/soft/index1.php on line 71
+[01-Mar-2024 12:26:46 America/Bogota] PHP Fatal error:  Uncaught Error: Call to undefined function money_format() in /home4/aprendad/public_html/exequialeslosjazmines.com/soft/index1.php:71
+Stack trace:
+#0 {main}
+  thrown in /home4/aprendad/public_html/exequialeslosjazmines.com/soft/index1.php on line 71
